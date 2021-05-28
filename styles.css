@@ -1,0 +1,137 @@
+body {
+    font-family: 'Lato';
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+section {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+p {
+    max-width: 50rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'Parisienne';
+    font-size:  xx-large;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Parisienne';
+    font-size:  xx-large;
+    margin-bottom: -12px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    color: rebeccapurple;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li a:hover {
+    color: white;
+    transition-duration: 200ms;
+}
+
+.nav-recipe {
+    position: relative;
+    top: -51px;
+    width: fit-content;
+    padding: 4px;
+    background-color: orange;
+}
+
+.nav-image {
+    border: orange solid 4px;
+    border-radius: 10%;
+}
+
+.nav-image:hover {
+    border: white solid 4px;
+    transition-duration: 150ms;
+    /* box-shadow: 1px 0px whitesmoke; */
+    border-radius: 8%;
+}
+
+.food-image {
+    margin-left: 100px;
+    border-radius: 1%;
+    box-shadow: 1px 1px white;
+    border-bottom: gray solid 1px;
+    border-right: gray solid 1px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    margin-left: 100px;
+    border-radius: 1%;
+    box-shadow: 1px 1px white;
+    border-bottom: gray solid 1px;
+    border-right: gray solid 1px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .source {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .source a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .source a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .source {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
